@@ -1,3 +1,16 @@
-body {
-    background-color: rgba(30, 143, 255, 0.651);
+main {
+    display: grid;
+    grid-template-rows: auto, auto;
+    justify-content: center;
+}
+
+form{
+    display: grid;
+    grid-template-rows: auto, auto;
+    justify-content: center;   
+}
+
+#search-text {
+    border: #dfe1e5 1px solid;
+    border-radius: 10px;
 }
