@@ -1,4 +1,14 @@
+#content {
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
 main {
+    grid-area: "main";
     display: grid;
     grid-template-rows: auto, auto;
     justify-content: center;
@@ -10,7 +20,7 @@ form{
     justify-content: center;   
 }
 
-#search-text {
+#search-text-box {
     border: #dfe1e5 1px solid;
     border-radius: 10px;
 }
