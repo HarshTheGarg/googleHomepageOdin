@@ -1,26 +1,44 @@
 #content {
     display: grid;
     grid-template-rows: 100px auto 100px;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    "header header header"
+    ". main ."
+    "footer footer footer";
 }
 
 main {
     grid-area: "main";
     display: grid;
-    grid-template-rows: auto, auto;
     justify-content: center;
+    background-color: aquamarine;
 }
 
 form{
     display: grid;
-    grid-template-rows: auto, auto;
     justify-content: center;   
+    width: 100%;
+    background-color: skyblue;
 }
 
 #search-text-box {
-    border: #dfe1e5 1px solid;
-    border-radius: 10px;
+    border: none;
+}
+
+#search-text-box:focus {
+    outline: none;
+}
+
+#search_image {
+    width: 15px;
+    height: auto;
+}
+
+#search-box-container {
+    border: 1px solid silver;
+    height: 25px;
+    border-radius: 12.5px;
+    padding: 5px;
+    width: 100%;
 }
