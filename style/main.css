@@ -1,14 +1,16 @@
 body {
     margin: 0px;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 7fr 6fr 1fr;
+    grid-template-rows: 1fr 9fr 3fr 1fr;
     grid-template-columns: 1fr 3fr 1fr;
 }
 
+/* Main Area */
 main {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -46,3 +48,72 @@ main {
 #search_image {
     margin: 0 10px 0 20px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttons {
+    margin: 20px;
+}
+
+input[type = "submit"] {
+    margin: 11px 4px;
+    padding: 0px 16px;
+    height: 36px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #3c4043;
+    border: 1px solid #f8f9fa;
+    background-color: #f8f9fa;
+}
+
+#languages {
+    font-size: small;
+    color: #202124;
+    text-decoration: none;
+}
+
+#languages a{
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px 22px;
+}
+
+#header_texts a{
+    font-size: small;
+    color: #202124;
+    text-decoration: none;
+}
+
+#header_images, #header_texts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header_images div, #header_texts div {
+    padding: 8px;
+}
+
+#header_texts div {
+    position: relative;
+    top: -2px;
+}
+
+#user_image {
+    border-radius: 50%;
+}
+
