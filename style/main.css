@@ -5,7 +5,7 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 13fr 1fr;
+    grid-template-rows: 1fr 7fr 6fr 1fr;
     grid-template-columns: 1fr 3fr 1fr;
 }
 
@@ -15,13 +15,12 @@ main {
     align-self: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 #logo {
     width: 272px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #search_box_container {
@@ -41,9 +40,9 @@ main {
     width: 420px;
     font-size: 100%;
     color: rgba(0,0,0,.87);
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 #search_image {
-    margin: 0 10px;
+    margin: 0 10px 0 20px;
 }
