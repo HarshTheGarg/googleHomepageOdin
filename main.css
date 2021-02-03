@@ -1,0 +1,20 @@
+body {
+    background: sandybrown;
+    margin: 0px;
+}
+
+.container {
+    height: 100vh;
+    background-color: bisque;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#test {
+    background-color: aquamarine;
+    height: 100px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    align-self: center;
+}
