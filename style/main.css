@@ -117,3 +117,7 @@ header {
     border-radius: 50%;
 }
 
+#apps_img{
+    width: 15px;
+    height: auto;
+}
